@@ -9,10 +9,10 @@
   <param name="algolia.custom.index.name" select=""/>
   <param name="use.fuse.search" select="1"/>
   <param name="use.multilingual.default.search" select="0"/>
-  <param name="custom.css.source" select="/var/www/ccms/usr/bitrise/xsl/custom/assets/layout-435/619e5444dd6a8.css"/>
+  <param name="custom.css.source" select="/var/www/ccms/usr/bitrise/xsl/custom/assets/layout-435/61a65f9133c23.css"/>
   <param name="portal.logo.filename" select="/var/www/ccms/usr/bitrise/xsl/custom/assets/layout-435/61770eafbf909.svg"/>
   <param name="portal.background.filename" select=""/>
-  <param name="portal.background.filename.out" select="/paligo/tmp/bitrise/production-61a5feecd1b248.29548463/41967-Bitrise_Docs-html5/out/css/image/portal-bg.jpg"/>
+  <param name="portal.background.filename.out" select="/paligo/tmp/bitrise/production-61a65fc8d1e8f0.64940511/41967-Bitrise_Docs-html5/out/css/image/portal-bg.jpg"/>
   <param name="company.name" select=""/>
   <param name="copyright.year" select=""/>
   <param name="copyright"> © 2021  </param>
@@ -24,7 +24,7 @@
   <param name="google.analytics" select="UA-53276411-1"/>
   <param name="google.analytics.type" select="gtag"/>
   <param name="user.custom.script" select="0"/>
-  <param name="layout.custom.script" select="/var/www/ccms/usr/bitrise/xsl/custom/assets/layout-435/61a5f8e3d5ef6.js"/>
+  <param name="layout.custom.script" select="/var/www/ccms/usr/bitrise/xsl/custom/assets/layout-435/61a65fa902af3.js"/>
   <param name="create.sitemap" select="1"/>
   <param name="destination.domain" select="https://devcenter.bitrise.io"/>
   <param name="submit.feedback" select="1"/>
@@ -90,9 +90,9 @@
   <param name="slides.revealjs.theme.custom" select=""/>
   <param name="slides.revealjs.background.image.opacity" select="1"/>
   <param name="slides.revealjs.default.background.image" select=""/>
-  <param name="slides.revealjs.default.background.image.out" select="/paligo/tmp/bitrise/production-61a5feecd1b248.29548463/41967-Bitrise_Docs-html5/out/css/image/default_slide_background.png"/>
+  <param name="slides.revealjs.default.background.image.out" select="/paligo/tmp/bitrise/production-61a65fc8d1e8f0.64940511/41967-Bitrise_Docs-html5/out/css/image/default_slide_background.png"/>
   <param name="slides.revealjs.logo" select=""/>
-  <param name="slides.revealjs.logo.out" select="/paligo/tmp/bitrise/production-61a5feecd1b248.29548463/41967-Bitrise_Docs-html5/out/css/image/logo-light.png"/>
+  <param name="slides.revealjs.logo.out" select="/paligo/tmp/bitrise/production-61a65fc8d1e8f0.64940511/41967-Bitrise_Docs-html5/out/css/image/logo-light.png"/>
   <param name="slides.revealjs.logo.alt" select=""/>
-  <param name="slides.revealjs.logo.alt.out" select="/paligo/tmp/bitrise/production-61a5feecd1b248.29548463/41967-Bitrise_Docs-html5/out/css/image/logo-dark.png"/>
+  <param name="slides.revealjs.logo.alt.out" select="/paligo/tmp/bitrise/production-61a65fc8d1e8f0.64940511/41967-Bitrise_Docs-html5/out/css/image/logo-dark.png"/>
 </params>

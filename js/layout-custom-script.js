@@ -32,8 +32,14 @@ function initialConfig() {
 
     function langSwitcher() {
 
-        let dropdownContainer = document.createElement('ul');
+        let dropdownContainer = document.createElement('div');
         dropdownContainer.setAttribute("class", "dropdown-container");
+
+        let menuText = document.createElement('span');
+        dropdownContainer.appendChild(menuText);
+
+        let dropdownContent = document.createElement('ul');
+        dropdownContent.setAttribute("class", "dropdown-content");
     
         let langOptionJa = document.createElement('a');
         langOptionJa.setAttribute("href", "https://devcenter.bitrise.io/ja/index-ja.html");
@@ -50,15 +56,18 @@ function initialConfig() {
         liItemEn.appendChild(langOptionEn);
         liItemJa.appendChild(langOptionJa);
     
-        dropdownContainer.appendChild(liItemEn);
-        dropdownContainer.appendChild(liItemJa);
+        dropdownContent.appendChild(liItemEn);
+        dropdownContent.appendChild(liItemJa);
+        dropdownContainer.appendChild(dropdownContent);
         document.querySelector(".adv-search").insertAdjacentElement("afterend", dropdownContainer);
     
         if (pageUrl.indexOf("/ja/") > -1) {
             liItemJa.classList.add("active-lang");
+            menuText.textContent = "日本語";
         }
         else if (pageUrl.indexOf("/en/") > -1) {
             liItemEn.classList.add("active-lang");
+            menuText.textContent = "EN";
             let breadCrumbHome = document.querySelector(".breadcrumb-link");
             let breadCrumbLink = breadCrumbHome.querySelector("a[href*='index-en.html']");
             breadCrumbLink.href = "/";
@@ -67,6 +76,7 @@ function initialConfig() {
 
         else {
             liItemEn.classList.add("active-lang");
+            menuText.textContent = "EN";
         }
     
         let jaUrl = pageUrl.replace("/en/", "/ja/");
@@ -76,6 +86,12 @@ function initialConfig() {
             langOptionJa.setAttribute("href", jaUrl);
             langOptionEn.setAttribute("href", enUrl);
         }
+
+        function toggleDropdown() {
+            dropdownContent.classList.toggle("show");
+        }
+
+        dropdownContainer.addEventListener("click", toggleDropdown);
     };
 
 
