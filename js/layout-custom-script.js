@@ -43,10 +43,12 @@ function initialConfig() {
     
         let langOptionJa = document.createElement('a');
         langOptionJa.setAttribute("href", "https://devcenter.bitrise.io/ja/index-ja.html");
+        langOptionJa.setAttribute("hreflang", "ja");
         langOptionJa.textContent = "日本語"
     
         let langOptionEn = document.createElement('a');
         langOptionEn.setAttribute("href", "https://devcenter.bitrise.io/");
+        langOptionEn.setAttribute("hreflang", "en");
         langOptionEn.textContent = "EN"
     
         let liItemEn = document.createElement('li');
